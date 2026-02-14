@@ -1,0 +1,71 @@
+# =============================================================================
+# LP Template - Apache設定
+# PageSpeed対策: キャッシュ、圧縮、ETag無効化
+# =============================================================================
+
+# ------------------------------------------------------------------------------
+# mod_expires: ファイルタイプ別キャッシュ期間
+# ------------------------------------------------------------------------------
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  # HTML: キャッシュなし
+  ExpiresByType text/html "access plus 0 seconds"
+
+  # CSS/JS: 1年
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType text/javascript "access plus 1 year"
+
+  # 画像: 1年
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/avif "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+  ExpiresByType image/vnd.microsoft.icon "access plus 1 year"
+
+  # フォント: 1年
+  ExpiresByType font/woff "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType application/font-woff "access plus 1 year"
+  ExpiresByType application/font-woff2 "access plus 1 year"
+</IfModule>
+
+# ------------------------------------------------------------------------------
+# mod_headers: Cache-Control ヘッダー（immutableフラグ付き）
+# ------------------------------------------------------------------------------
+<IfModule mod_headers.c>
+  # HTML: キャッシュなし
+  <FilesMatch "\.(html|htm)$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires "0"
+  </FilesMatch>
+
+  # CSS/JS/画像/フォント: 1年キャッシュ + immutable
+  <FilesMatch "\.(css|js|jpg|jpeg|png|webp|avif|svg|ico|woff|woff2)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+</IfModule>
+
+# ------------------------------------------------------------------------------
+# mod_deflate: Gzip圧縮
+# ------------------------------------------------------------------------------
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE text/javascript
+  AddOutputFilterByType DEFLATE application/json
+  AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# ------------------------------------------------------------------------------
+# ETag無効化（キャッシュ制御をExpires/Cache-Controlに統一）
+# ------------------------------------------------------------------------------
+<IfModule mod_headers.c>
+  Header unset ETag
+</IfModule>
+FileETag None

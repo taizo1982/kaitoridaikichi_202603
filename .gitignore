@@ -1,0 +1,16 @@
+node_modules/
+vendor/
+dist/
+out/
+build/
+bundled/
+*.log
+.DS_Store
+Thumbs.db
+*.zip
+*.map
+*.tar.gz
+*.tgz
+.vscode/
+.idea/
+.claude/settings.json

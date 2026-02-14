@@ -1,0 +1,29 @@
+{
+  "name": "lp-template",
+  "version": "2.2.1",
+  "description": "シンプルなHTML/CSS/JSランディングページテンプレート",
+  "type": "module",
+  "scripts": {
+    "dev": "npx serve src -p 3000",
+    "optimize:images": "node scripts/optimize-images.mjs",
+    "check:typography": "node scripts/check-typography.mjs",
+    "check:accessibility": "node scripts/check-accessibility.mjs",
+    "check:links": "node scripts/check-links.mjs",
+    "check:all": "npm run check:typography && npm run check:accessibility && npm run check:links",
+    "inject:meta": "node scripts/inject-meta.mjs",
+    "inject:analytics": "node scripts/inject-analytics.mjs",
+    "inject:conversion": "node scripts/inject-conversion.mjs",
+    "build": "node scripts/build.mjs",
+    "preview": "npx serve build -p 3000",
+    "validate": "node scripts/validate.mjs"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.0",
+    "@babel/preset-env": "^7.24.0",
+    "sharp": "^0.33.4",
+    "html-minifier-terser": "^7.2.0",
+    "clean-css": "^5.3.3",
+    "terser": "^5.31.0",
+    "puppeteer": "^22.0.0"
+  }
+}

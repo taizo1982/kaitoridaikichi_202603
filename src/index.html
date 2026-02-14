@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ランディングページ</title>
+  <link rel="stylesheet" href="style.css">
+<!-- OGP -->
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+  <!-- ヘッダー -->
+  <header class="header">
+    <div class="container">
+      <img src="images/logo.png" alt="ロゴ" class="logo">
+      <a href="#cta" class="header-cta" data-cv="header-click">お問い合わせ</a>
+    </div>
+  </header>
+
+  <!-- ヒーロー -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="hero-title">キャッチコピーをここに</h1>
+      <p class="hero-subtitle">サブキャッチをここに入れます</p>
+      <a href="#cta" class="btn btn-primary" data-cv="hero-click">今すぐ申し込む</a>
+    </div>
+  </section>
+
+  <!-- 課題セクション -->
+  <section class="pain">
+    <div class="container">
+      <h2 class="section-title">こんなお悩みありませんか？</h2>
+      <ul class="pain-list">
+        <li class="pain-item">課題1をここに</li>
+        <li class="pain-item">課題2をここに</li>
+        <li class="pain-item">課題3をここに</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 解決策セクション -->
+  <section class="solution">
+    <div class="container">
+      <h2 class="section-title">その悩み、解決できます</h2>
+      <div class="solution-steps">
+        <div class="step">
+          <span class="step-number">1</span>
+          <h3 class="step-title">ステップ1</h3>
+          <p class="step-description">説明をここに</p>
+        </div>
+        <div class="step">
+          <span class="step-number">2</span>
+          <h3 class="step-title">ステップ2</h3>
+          <p class="step-description">説明をここに</p>
+        </div>
+        <div class="step">
+          <span class="step-number">3</span>
+          <h3 class="step-title">ステップ3</h3>
+          <p class="step-description">説明をここに</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- お客様の声 -->
+  <section class="testimonials">
+    <div class="container">
+      <h2 class="section-title">お客様の声</h2>
+      <div class="testimonial-list">
+        <div class="testimonial">
+          <p class="testimonial-text">「感想をここに入れます」</p>
+          <p class="testimonial-author">30代 女性</p>
+        </div>
+        <div class="testimonial">
+          <p class="testimonial-text">「感想をここに入れます」</p>
+          <p class="testimonial-author">40代 男性</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <div class="container">
+      <h2 class="section-title">よくあるご質問</h2>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary class="faq-question">質問1をここに</summary>
+          <p class="faq-answer">回答をここに入れます。</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">質問2をここに</summary>
+          <p class="faq-answer">回答をここに入れます。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" id="cta">
+    <div class="container">
+      <h2 class="cta-title">今すぐお申し込みください</h2>
+      <p class="cta-description">お気軽にお問い合わせください</p>
+      <a href="https://example.com/form" class="btn btn-primary btn-large" data-cv="cta-click">
+        申し込みフォームへ
+      </a>
+      <a href="tel:090-0000-0000" class="btn btn-secondary" data-cv="tel">
+        電話で問い合わせ
+      </a>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer class="footer">
+    <div class="container">
+      <p class="copyright">&copy; 2025 会社名. All rights reserved.</p>
+      <nav class="footer-nav">
+        <a href="/privacy">プライバシーポリシー</a>
+        <a href="/terms">利用規約</a>
+        <a href="/tokusho">特定商取引法に基づく表記</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
