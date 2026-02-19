@@ -777,6 +777,30 @@ async function build() {
     // .htaccess が無い場合はスキップ
   }
 
+  // src/ 直下のルートアセットをコピー（favicon, og-image 等）
+  const rootAssetPatterns = ["favicon.svg", "favicon.ico", "og-image.*", "robots.txt", "sitemap.xml"];
+  try {
+    const srcEntries = await fs.readdir(srcDir, { withFileTypes: true });
+    const rootAssets = srcEntries.filter((entry) => {
+      if (!entry.isFile()) return false;
+      return rootAssetPatterns.some((pattern) => {
+        if (pattern.includes("*")) {
+          const prefix = pattern.split("*")[0];
+          return entry.name.startsWith(prefix);
+        }
+        return entry.name === pattern;
+      });
+    });
+    for (const asset of rootAssets) {
+      await fs.copyFile(path.join(srcDir, asset.name), path.join(buildDir, asset.name));
+    }
+    if (rootAssets.length > 0) {
+      console.log(`✓ Root assets copied (${rootAssets.map((a) => a.name).join(", ")})`);
+    }
+  } catch {
+    // スキップ
+  }
+
   // HTML処理
   const htmlPath = path.join(srcDir, "index.html");
   try {

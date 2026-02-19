@@ -1,127 +1,371 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" class="no-js">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ランディングページ</title>
+  <title>買取大吉 山科音羽店｜金の価値だけ知ってください</title>
+  <meta name="description" content="売らなくて大丈夫です。山科で金製品の価格目安をLINEでお伝えします。相場が高い今、まずは価値だけ確認しませんか。">
+  <meta property="og:title" content="買取大吉 山科音羽店｜金の価値だけ知ってください">
+  <meta property="og:description" content="売らなくて大丈夫です。山科で金製品の価格目安をLINEでお伝えします。相場が高い今、まずは価値だけ確認しませんか。">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:image" content="og-image.jpg">
+  <meta name="twitter:image" content="og-image.jpg">
+  <script>
+    document.documentElement.classList.remove('no-js');
+    document.documentElement.classList.add('js');
+  </script>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Shippori+Mincho:wght@500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-<!-- OGP -->
-<meta property="og:locale" content="ja_JP">
-<meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
-  <!-- ヘッダー -->
+  <!-- Header -->
   <header class="header">
-    <div class="container">
-      <img src="images/logo.png" alt="ロゴ" class="logo">
-      <a href="#cta" class="header-cta" data-cv="header-click">お問い合わせ</a>
+    <div class="header-inner">
+      <img src="images/logo.webp" alt="買取大吉" class="header-logo" width="160" height="40">
+      <a href="https://line.me/R/ti/p/@293ionda?oat_content=url&ts=12121528" class="header-cta" data-cv="line">
+        <span class="header-cta-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
+          </svg>
+        </span>
+        LINE相談
+      </a>
     </div>
   </header>
 
-  <!-- ヒーロー -->
-  <section class="hero">
-    <div class="container">
-      <h1 class="hero-title">キャッチコピーをここに</h1>
-      <p class="hero-subtitle">サブキャッチをここに入れます</p>
-      <a href="#cta" class="btn btn-primary" data-cv="hero-click">今すぐ申し込む</a>
-    </div>
-  </section>
+  <main>
+    <!-- 1. Hero Section -->
+    <section class="hero">
+      <picture class="hero-bg">
+        <source media="(max-width: 768px)" srcset="images/hero-sp.webp" type="image/webp">
+        <source media="(max-width: 768px)" srcset="images/hero-sp.jpg">
+        <source srcset="images/hero.webp" type="image/webp">
+        <img src="images/hero.jpg" alt="査定台の上に並んだ金製品" width="1400" height="764" data-no-picture>
+      </picture>
+      <div class="hero-content">
+        <p class="hero-lead">売らなくて大丈夫です。</p>
+        <h1 class="hero-title">まずは金の価値だけ、<br>知ってみませんか？</h1>
+        <p class="hero-description">LINEで写真1枚送るだけ。査定額をお伝えします。</p>
+        <p class="hero-note">※ 売却の勧誘は一切ありません</p>
+        <a href="https://line.me/R/ti/p/@293ionda?oat_content=url&ts=12121528" class="btn btn-line-green btn-line hero-cta-btn" data-cv="line">
+          <svg class="btn-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
+          </svg>
+          <span class="pc-only">相場が高いうちに、</span>価格だけ確認する
+          <span class="btn-sub">LINE／写真1枚</span>
+        </a>
+      </div>
+      <div class="hero-decoration"></div>
+    </section>
 
-  <!-- 課題セクション -->
-  <section class="pain">
-    <div class="container">
-      <h2 class="section-title">こんなお悩みありませんか？</h2>
-      <ul class="pain-list">
-        <li class="pain-item">課題1をここに</li>
-        <li class="pain-item">課題2をここに</li>
-        <li class="pain-item">課題3をここに</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- 解決策セクション -->
-  <section class="solution">
-    <div class="container">
-      <h2 class="section-title">その悩み、解決できます</h2>
-      <div class="solution-steps">
-        <div class="step">
-          <span class="step-number">1</span>
-          <h3 class="step-title">ステップ1</h3>
-          <p class="step-description">説明をここに</p>
-        </div>
-        <div class="step">
-          <span class="step-number">2</span>
-          <h3 class="step-title">ステップ2</h3>
-          <p class="step-description">説明をここに</p>
-        </div>
-        <div class="step">
-          <span class="step-number">3</span>
-          <h3 class="step-title">ステップ3</h3>
-          <p class="step-description">説明をここに</p>
+    <!-- 2. Empathy Section -->
+    <section class="empathy" id="empathy">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="section-title-main">こんな気持ち、<br class="sp-only">ありませんか？</span>
+        </h2>
+        <ul class="empathy-list">
+          <li class="empathy-item">
+            <span class="empathy-number">1</span>
+            <span class="empathy-text">金が高いと聞くが今の相場が分からない</span>
+          </li>
+          <li class="empathy-item">
+            <span class="empathy-number">2</span>
+            <span class="empathy-text">せっかく売るなら損をしたくない</span>
+          </li>
+          <li class="empathy-item">
+            <span class="empathy-number">3</span>
+            <span class="empathy-text">上がるのか下がるのか判断できない</span>
+          </li>
+          <li class="empathy-item">
+            <span class="empathy-number">4</span>
+            <span class="empathy-text">いきなり売りに出すのは少し不安</span>
+          </li>
+          <li class="empathy-item">
+            <span class="empathy-number">5</span>
+            <span class="empathy-text">売る前にまず価格だけ知りたい</span>
+          </li>
+        </ul>
+        <div class="empathy-answer">
+          <p class="empathy-answer-text">「売るかどうかは決めていない段階」で<br class="sp-only">相談される方がほとんどです。</p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- お客様の声 -->
-  <section class="testimonials">
-    <div class="container">
-      <h2 class="section-title">お客様の声</h2>
-      <div class="testimonial-list">
-        <div class="testimonial">
-          <p class="testimonial-text">「感想をここに入れます」</p>
-          <p class="testimonial-author">30代 女性</p>
-        </div>
-        <div class="testimonial">
-          <p class="testimonial-text">「感想をここに入れます」</p>
-          <p class="testimonial-author">40代 男性</p>
+    <!-- 3. Proposal Section -->
+    <section class="proposal" id="proposal">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="section-title-main">売らなくて大丈夫です。<br>まずは「判断材料」を<br class="sp-only">揃えませんか？</span>
+        </h2>
+        <p class="proposal-lead">売却を前提としない金製品の相談をお受けしています。</p>
+        <ul class="proposal-list">
+          <li class="proposal-item">
+            <span class="proposal-check">✓</span>
+            <span class="proposal-text">今の金相場にもとづいた価格目安</span>
+          </li>
+          <li class="proposal-item">
+            <span class="proposal-check">✓</span>
+            <span class="proposal-text">今売る場合と待つ場合の判断材料</span>
+          </li>
+          <li class="proposal-item">
+            <span class="proposal-check">✓</span>
+            <span class="proposal-text">「今回は見送り」という判断でも問題ありません</span>
+          </li>
+        </ul>
+        <p class="proposal-note">※ 無理に売却をすすめることはありません。</p>
+        <div class="proposal-cta">
+          <a href="https://line.me/R/ti/p/@293ionda?oat_content=url&ts=12121528" class="btn btn-line-green btn-line" data-cv="line">
+            <svg class="btn-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
+            </svg>
+            売る前提なしで価格確認
+            <span class="btn-sub">LINE／写真1枚</span>
+          </a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- FAQ -->
-  <section class="faq">
-    <div class="container">
-      <h2 class="section-title">よくあるご質問</h2>
-      <div class="faq-list">
-        <details class="faq-item">
-          <summary class="faq-question">質問1をここに</summary>
-          <p class="faq-answer">回答をここに入れます。</p>
-        </details>
-        <details class="faq-item">
-          <summary class="faq-question">質問2をここに</summary>
-          <p class="faq-answer">回答をここに入れます。</p>
-        </details>
+    <!-- 4. Items Section -->
+    <section class="items" id="items">
+      <div class="container">
+        <h2 class="section-title">
+          こんな<span class="section-title-highlight">金製品</span>の<br>価格目安を<br class="sp-only">お伝えできます
+        </h2>
+        <div class="items-grid">
+          <div class="items-card">
+            <span class="items-card-name">指輪</span>
+          </div>
+          <div class="items-card">
+            <span class="items-card-name">ネックレス</span>
+          </div>
+          <div class="items-card">
+            <span class="items-card-name">ブレスレット</span>
+          </div>
+          <div class="items-card">
+            <span class="items-card-name">金貨</span>
+          </div>
+          <div class="items-card">
+            <span class="items-card-name">ピアス・<br class="sp-only">イヤリング</span>
+          </div>
+          <div class="items-card">
+            <span class="items-card-name">金時計</span>
+          </div>
+          <div class="items-card">
+            <span class="items-card-name">メガネ<br class="sp-only">金フレーム</span>
+          </div>
+          <div class="items-card">
+            <span class="items-card-name">金歯</span>
+          </div>
+        </div>
+        <div class="items-ok-list">
+          <span class="items-ok-badge">壊れていてもOK</span>
+          <span class="items-ok-badge">片方だけでもOK</span>
+          <span class="items-ok-badge">古いものでもOK</span>
+        </div>
+        <p class="items-note">「これは金か分からない」という状態でも<br class="sp-only">問題ありません。</p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CTA -->
-  <section class="cta" id="cta">
-    <div class="container">
-      <h2 class="cta-title">今すぐお申し込みください</h2>
-      <p class="cta-description">お気軽にお問い合わせください</p>
-      <a href="https://example.com/form" class="btn btn-primary btn-large" data-cv="cta-click">
-        申し込みフォームへ
-      </a>
-      <a href="tel:090-0000-0000" class="btn btn-secondary" data-cv="tel">
-        電話で問い合わせ
-      </a>
-    </div>
-  </section>
+    <!-- 5. LINE Section -->
+    <section class="line-section" id="line">
+      <div class="container">
+        <h2 class="line-section-title">
+          来店前に、LINEで<br>金額の目安がわかります
+        </h2>
 
-  <!-- フッター -->
+        <div class="line-steps">
+          <div class="line-step-card">
+            <div class="line-step-number">1</div>
+            <p class="line-step-title">友だち追加</p>
+          </div>
+          <div class="line-step-card">
+            <div class="line-step-number">2</div>
+            <p class="line-step-title">写真送信</p>
+          </div>
+          <div class="line-step-card">
+            <div class="line-step-number">3</div>
+            <p class="line-step-title">価格目安を<br>ご案内</p>
+          </div>
+        </div>
+
+        <div class="line-notes">
+          <p class="line-note">※ 実際の買取価格は重さ・刻印・状態の確認後に確定します</p>
+          <p class="line-note">※ LINE上で売却を促すことはありません</p>
+        </div>
+
+        <a href="https://line.me/R/ti/p/@293ionda?oat_content=url&ts=12121528" class="btn btn-line-cta" data-cv="line">
+          <svg class="btn-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
+          </svg>
+          LINEで価格の目安を確認する
+        </a>
+      </div>
+    </section>
+
+    <!-- 6. Urgency Section -->
+    <section class="urgency" id="urgency">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="section-title-main">「価格だけ」確認しておく<br class="sp-only">方が増えています</span>
+        </h2>
+        <div class="urgency-card">
+          <p class="urgency-strong">現在の金相場は、過去最高の水準で推移しています。</p>
+          <p class="urgency-example">「この価格なら、今回は売らない」「もう少し様子を見る」<br class="sp-only">→ どちらも問題ありません。</p>
+          <p class="urgency-warning">ただし、相場は予告なく下がることもあります。</p>
+          <p class="urgency-conclusion">相場が高い今のうちに価格だけ確認しておく、<br class="sp-only">そんな方が増えています。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Visit Section -->
+    <section class="visit" id="visit">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="section-title-main">来店＝売却、ではありません</span>
+        </h2>
+        <p class="visit-lead">ご来店は、売るかどうかを決める場ではなく、<br class="sp-only">相談の場です。</p>
+        <ul class="visit-list">
+          <li class="visit-item">
+            <span class="visit-text">LINEで確認した金額の再確認</span>
+          </li>
+          <li class="visit-item">
+            <span class="visit-text">写真と実物との差についての説明</span>
+          </li>
+          <li class="visit-item">
+            <span class="visit-text">一部の品物だけを売却する</span>
+          </li>
+          <li class="visit-item">
+            <span class="visit-text">今回は見送りで様子を見る</span>
+          </li>
+          <li class="visit-item">
+            <span class="visit-text">他のお店と比較してから検討する</span>
+          </li>
+        </ul>
+        <p class="visit-answer">いずれも問題ありません。</p>
+      </div>
+    </section>
+
+    <!-- 8. Values Section -->
+    <section class="values" id="values">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="section-title-main">大切にしていること</span>
+        </h2>
+        <ul class="values-list">
+          <li class="values-item">
+            <span class="values-check">✓</span>
+            <span class="values-text">無理な買取は一切いたしません</span>
+          </li>
+          <li class="values-item">
+            <span class="values-check">✓</span>
+            <span class="values-text">査定だけ・相談だけも<br class="sp-only">歓迎しています</span>
+          </li>
+          <li class="values-item">
+            <span class="values-check">✓</span>
+            <span class="values-text">判断はお客様ご自身に<br class="sp-only">お任せしています</span>
+          </li>
+        </ul>
+        <p class="values-closing">売るかどうかは、お話ししてから一緒に考えましょう。</p>
+      </div>
+    </section>
+
+    <!-- 9. Shop Info Section -->
+    <section class="shop-info" id="shop">
+      <div class="container">
+        <h2 class="shop-info-title">山科で気軽に相談できる<br class="sp-only">買取専門店です</h2>
+        <div class="shop-info-grid">
+          <div class="shop-info-map">
+            <img src="images/map.webp" alt="西友山科から北へ徒歩1分" width="380" height="300" loading="lazy">
+          </div>
+          <div class="shop-info-detail">
+            <img src="images/logo.webp" alt="買取大吉" class="shop-info-logo" width="180" height="45" loading="lazy">
+            <p class="shop-info-name">買取大吉 山科音羽店</p>
+            <address class="shop-info-address">
+              〒607-8062<br>
+              京都市山科区音羽役出町1-27<br>
+              <span class="shop-info-landmark">SEIYU駐車場すぐ横</span>
+            </address>
+            <dl class="shop-info-list">
+              <div class="shop-info-item">
+                <dt>営業時間</dt>
+                <dd>10:00〜18:30</dd>
+              </div>
+              <div class="shop-info-item">
+                <dt>定休日</dt>
+                <dd>水曜日</dd>
+              </div>
+              <div class="shop-info-item">
+                <dt>電話番号</dt>
+                <dd><a href="tel:075-502-1515" data-cv="tel">075-502-1515</a></dd>
+              </div>
+            </dl>
+            <div class="shop-info-buttons">
+              <a href="tel:075-502-1515" class="btn btn-outline-navy" data-cv="tel">
+                <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+                電話で相談する
+              </a>
+              <a href="https://line.me/R/ti/p/@293ionda?oat_content=url&ts=12121528" class="btn btn-line-green" data-cv="line">
+                <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
+                </svg>
+                LINEで予約・ご相談
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. Closing Section -->
+    <section class="closing" id="closing">
+      <div class="container">
+        <h2 class="closing-title">まずは「いまの価値」を<br>知るだけで構いません</h2>
+        <div class="closing-scenarios">
+          <span class="closing-scenario">売るかどうかは未定</span>
+          <span class="closing-scenario">価格だけ知りたい</span>
+          <span class="closing-scenario">判断材料が欲しい</span>
+        </div>
+        <p class="closing-lead">そのような段階でも、<br class="sp-only">お気軽にLINEからご相談ください。</p>
+        <a href="https://line.me/R/ti/p/@293ionda?oat_content=url&ts=12121528" class="btn btn-line-cta btn-large" data-cv="line">
+          <svg class="btn-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
+          </svg>
+          判断材料として金の価格を確認してみる
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
   <footer class="footer">
-    <div class="container">
-      <p class="copyright">&copy; 2025 会社名. All rights reserved.</p>
-      <nav class="footer-nav">
-        <a href="/privacy">プライバシーポリシー</a>
-        <a href="/terms">利用規約</a>
-        <a href="/tokusho">特定商取引法に基づく表記</a>
-      </nav>
+    <div class="footer-copyright">
+      <div class="container">
+        <div class="footer-copyright-content">
+          <img src="images/logo.webp" alt="買取大吉" class="footer-copyright-logo" width="120" height="30" loading="lazy">
+          <p class="copyright">&copy; 買取大吉 山科音羽店</p>
+        </div>
+      </div>
     </div>
   </footer>
+
+  <!-- Sticky CTA Bar (mobile only) -->
+  <div class="sticky-cta" aria-hidden="true">
+    <a href="https://line.me/R/ti/p/@293ionda?oat_content=url&ts=12121528" class="sticky-cta-btn" data-cv="line">
+      <svg class="sticky-cta-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
+      </svg>
+      相場が高いうちに、価格だけ確認する
+    </a>
+  </div>
 
   <script src="script.js"></script>
 </body>
