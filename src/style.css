@@ -986,6 +986,37 @@ section {
   text-wrap: balance;
 }
 
+/* Staff Profile */
+.values-staff {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 0.75rem;
+}
+
+.values-staff-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 3px solid var(--color-navy);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.values-staff-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-navy-dark);
+}
+
+.values-staff-message {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
 /* ==========================================================================
    Shop Info Section
    ========================================================================== */
