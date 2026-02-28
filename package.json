@@ -20,10 +20,10 @@
   "devDependencies": {
     "@babel/core": "^7.24.0",
     "@babel/preset-env": "^7.24.0",
-    "sharp": "^0.33.4",
-    "html-minifier-terser": "^7.2.0",
     "clean-css": "^5.3.3",
-    "terser": "^5.31.0",
-    "puppeteer": "^22.0.0"
+    "html-minifier-terser": "^7.2.0",
+    "puppeteer": "^22.0.0",
+    "sharp": "^0.33.5",
+    "terser": "^5.31.0"
   }
 }
